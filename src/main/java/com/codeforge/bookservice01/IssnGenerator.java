@@ -1,0 +1,19 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.codeforge.bookservice01;
+import java.util.Random;
+
+/**
+ *
+ * @author Katleho
+ */
+public class IssnGenerator implements NumberGenerator{
+    
+    @Override
+    public String generateNumber(){
+        return "8-"+Math.abs(new Random().nextInt());
+    }
+}
